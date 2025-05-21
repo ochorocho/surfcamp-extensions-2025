@@ -9,7 +9,6 @@
     "packageRules": [
       {
           "groupName": "TYPO3 CMS",
-          "matchPackageNames": ["!typo3/cms-cli", "!typo3/cms-composer-installers"],
           "matchManagers": ["composer"]
       }, {
         "groupName": "Docker",
