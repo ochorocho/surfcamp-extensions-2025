@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base"],
+  "extends": ["config:recommended"],
   "branchPrefix": "github-renovate/",
   "packageRules": [
     {
@@ -16,17 +16,7 @@
     },
     {
       "matchManagers": ["dockerfile"],
-      "matchPaths": [".github/.devcontainer/Dockerfile"]
+      "matchFileNames": [".github/.devcontainer/Dockerfile"]
     }
-  ],
-
-  "docker": {
-    "enabled": true
-  },
-
-  "regexManagers": [],
-  "fileMatch": [
-    "\\.github/\\.devcontainer/Dockerfile$",
-    "composer\\.json$"
   ]
 }
