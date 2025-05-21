@@ -32,4 +32,5 @@ jobs:
           RENOVATE_PLATFORM_COMMIT: "true"
           # Override schedule if set
           RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{''schedule'':null}' || '' }}
-          LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
+          LOG_LEVEL: debug
+          #LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
