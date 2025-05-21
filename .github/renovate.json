@@ -7,10 +7,14 @@
     "rangeStrategy": "in-range-only",
     "enabledManagers": ["composer"],
     "packageRules": [
-    {
-        "groupName": "TYPO3 CMS",
-        "matchPackageNames": ["!typo3/cms-cli", "!typo3/cms-composer-installers"]
-    }
+      {
+          "groupName": "TYPO3 CMS",
+          "matchPackageNames": ["!typo3/cms-cli", "!typo3/cms-composer-installers"]
+      }, {
+        "groupName": "Docker",
+        "matchDatasources": ["docker"],
+        "versioning": "semver"
+      }
     ],
     "ignorePaths": [
         "**/node_modules/**",
