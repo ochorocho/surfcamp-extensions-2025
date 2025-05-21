@@ -1,6 +1,6 @@
 {
   "extends": ["config:base"],
-
+  "branchPrefix": "github-renovate/",
   "packageRules": [
     {
       "matchManagers": ["composer"],
