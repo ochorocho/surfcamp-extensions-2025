@@ -23,7 +23,6 @@
     "config": {
         "bin-dir": "bin",
         "preferred-install": {
-            "bk2k/bootstrap-package": "src",
             "typo3-incubator/theme-fcbigfoot": "src"
         },
         "sort-packages": true,

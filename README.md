@@ -15,6 +15,12 @@ This project will combine all projects created during the TYPO3 SurfCamp 2025
 - Username: `admin`
 - Password: `John3:16`
 
+### Frontend
+
+- Login page: <code-space-url or see PORTS in terminal>/club/login
+- Username: `info@example.com`
+- Password: `Password.1`
+
 ## Extensions
 
 Installed
@@ -36,13 +42,12 @@ port with the given "Forwarded Address".
 
 ## Local requirements
 
-* having Docker installed locally (see https://docs.docker.com/get-docker/)
+* Having Docker installed locally (see https://docs.docker.com/get-docker/)
 * VS Code with the devcontainer extension enabled (see https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 # ToDo
 
 * Write docs
-* Export DB without caches
 * Changed files Header.html and SubHeader.html. Why?
 * Auto update: Do not ship composer.lock to always install the latest? Dependabot/renovate?
 
