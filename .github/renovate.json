@@ -1,31 +1,23 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": [
-		"config:recommended",
-		":disableMajorUpdates"
-	],
-	"commitMessagePrefix": "[RENOVATE] ",
-	"commitMessageTopic": "{{depName}}",
-	"commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
-	"rangeStrategy": "in-range-only",
-	"enabledManagers": [
-		"composer"
-	],
-	"packageRules": [
-		{
-			"excludePackageNames": [
-				"typo3/cms-cli",
-				"typo3/cms-composer-installers"
-			],
-			"groupName": "TYPO3 CMS"
-		}
-	],
-	"ignorePaths": [
-		"**/node_modules/**",
-		"**/vendor/**",
-		"**/test/**",
-		"**/tests/**",
-		"**/fixtures/**",
-		"**/packages/**"
-	]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["config:recommended", ":disableMajorUpdates"],
+    "commitMessagePrefix": "[RENOVATE] ",
+    "commitMessageTopic": "{{depName}}",
+    "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
+    "rangeStrategy": "in-range-only",
+    "enabledManagers": ["composer"],
+    "packageRules": [
+    {
+        "groupName": "TYPO3 CMS",
+        "matchPackageNames": ["!typo3/cms-cli", "!typo3/cms-composer-installers"]
+    }
+    ],
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/vendor/**",
+        "**/test/**",
+        "**/tests/**",
+        "**/fixtures/**",
+        "**/packages/**"
+    ]
 }
