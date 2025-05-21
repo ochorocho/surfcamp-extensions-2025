@@ -2,6 +2,8 @@
 
 sudo service mariadb start
 
+WORKSPACE_PATH=/workspaces/surfcamp-2025
+
 # Database credentials
 USER="db"
 PASSWORD="db"
@@ -28,11 +30,11 @@ composer install
 
 # Symlink DocumentRoot
 sudo rm -rf /var/www/html
-sudo ln -sfn /workspaces/surfcamp-2025/public /var/www/html
+sudo ln -sfn $WORKSPACE_PATH/public /var/www/html
 
 # Add composer bin directory to PATH
 # so all commands are globally available
-echo "export PATH=/workspace/bin:\$PATH" >> ~/.bashrc
+echo "export PATH=$WORKSPACE_PATH/bin:\$PATH" >> ~/.bashrc
 
 # Dynamically set TYPO3_BASE_DOMAIN depending on the environment (local or codespaces)
 if [[ -n "$CODESPACE_NAME" ]]; then
@@ -48,9 +50,12 @@ fi
 ./bin/typo3 extension:setup
 
 # Add scheduler cron
-echo "* * * * * root /usr/local/bin/php /workspaces/surfcamp-2025/bin/typo3 scheduler:run > /proc/1/fd/1 2>/proc/1/fd/2" | sudo tee /etc/cron.d/typo3-scheduler
+echo "* * * * * root /usr/local/bin/php $WORKSPACE_PATH/bin/typo3 scheduler:run > /proc/1/fd/1 2>/proc/1/fd/2" | sudo tee /etc/cron.d/typo3-scheduler
 sudo chmod 0644 /etc/cron.d/typo3-scheduler
 
 sudo service cron start
 sudo service typo3-message-consumer start
 sudo service apache2 start
+
+# Ensure caches are clean and env vars will be loaded
+./bin/typo3 cache:flush
