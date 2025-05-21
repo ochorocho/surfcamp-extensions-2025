@@ -1,20 +1,40 @@
 {
-    "extends": ["config:recommended"],
-    "branchPrefix": "github-renovate/",
-    "packageRules": [
-    {
-        "matchFileNames": ["vendor/**"],
-        "groupName": "Composer",
-        "versioning": "composer",
-        "rangeStrategy": "bump",
-        "groupSlug": "composer",
-        "postUpgradeTasks": {
-        "fileFilters": ["**/composer.json"],
-        "executionMode": "update",
-        "commands": [
-          "composer update 'typo3/cms-*' -W"
-        ]
-      }
-    }
-    ]
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:recommended",
+		":disableMajorUpdates"
+	],
+	"commitMessagePrefix": "[RENOVATE] ",
+	"commitMessageTopic": "{{depName}}",
+	"commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
+	"rangeStrategy": "in-range-only",
+	"enabledManagers": [
+		"composer"
+	],
+	"packageRules": [
+		{
+			"matchPackagePrefixes": [
+				"typo3/cms-"
+			],
+			"excludePackageNames": [
+				"typo3/cms-cli",
+				"typo3/cms-composer-installers"
+			],
+			"groupName": "TYPO3 CMS"
+		}
+	],
+	"hostRules": [
+		{
+			"token": "{{ secrets.RENOVATE_TOKEN }}",
+			"matchHost": "gitlab.zeroseven.de"
+		}
+	],
+	"ignorePaths": [
+		"**/node_modules/**",
+		"**/vendor/**",
+		"**/test/**",
+		"**/tests/**",
+		"**/fixtures/**",
+		"**/packages/**"
+	]
 }
