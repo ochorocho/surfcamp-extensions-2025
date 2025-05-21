@@ -1,13 +1,13 @@
 {
-  "extends": ["config:recommended"],
-  "branchPrefix": "github-renovate/",
-  "packageRules": [
+    "extends": ["config:recommended"],
+    "branchPrefix": "github-renovate/",
+    "packageRules": [
     {
-      "paths": ["vendor/**"],
-      "groupName": "Composer",
-      "versioning": "composer",
-      "rangeStrategy": "bump",
-      "groupSlug": "composer"
+        "matchFileNames": ["vendor/**"],
+        "groupName": "Composer",
+        "versioning": "composer",
+        "rangeStrategy": "bump",
+        "groupSlug": "composer"
     }
-  ]
+    ]
 }
