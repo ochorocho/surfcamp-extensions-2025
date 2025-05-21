@@ -23,12 +23,6 @@
 			"groupName": "TYPO3 CMS"
 		}
 	],
-	"hostRules": [
-		{
-			"token": "{{ secrets.RENOVATE_TOKEN }}",
-			"matchHost": "gitlab.zeroseven.de"
-		}
-	],
 	"ignorePaths": [
 		"**/node_modules/**",
 		"**/vendor/**",
