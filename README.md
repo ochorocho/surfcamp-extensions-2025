@@ -45,11 +45,6 @@ port with the given "Forwarded Address".
 * Having Docker installed locally (see https://docs.docker.com/get-docker/)
 * VS Code with the devcontainer extension enabled (see https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-# ToDo
-
-* Write docs
-* Auto update: Do not ship composer.lock to always install the latest? Dependabot/renovate?
-
 # Development notes
 
 * Use ` .devcontainer/db-export.sh` to export the current database.
