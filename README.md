@@ -29,6 +29,11 @@ Wating for a dedicated repository
 * Servey: https://github.com/TYPO3incubator/surfcamp-2025-team4/
 * Events: https://github.com/TYPO3incubator/surfcamp-2025-team6
 
+## GitHub Codespace
+
+To share the Codespace go to the "PORTS" panel next to "TERMINAL". Right-click the desired port (`3333` for the Website) and select "Port Visibility -> Public". Once the port is "public" anyone can access this
+port with the given "Forwarded Address".
+
 ## Local requirements
 
 * having Docker installed locally (see https://docs.docker.com/get-docker/)
@@ -37,6 +42,9 @@ Wating for a dedicated repository
 # ToDo
 
 * Write docs
+* Export DB without caches
+* Changed files Header.html and SubHeader.html. Why?
+* Auto update: Do not ship composer.lock to always install the latest? Dependabot/renovate?
 
 # Development notes
 
