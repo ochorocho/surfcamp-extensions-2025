@@ -5,14 +5,16 @@
     "commitMessageTopic": "{{depName}}",
     "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
     "rangeStrategy": "in-range-only",
-    "enabledManagers": ["composer"],
+    "enabledManagers": ["composer", "dockerfile"],
     "packageRules": [
       {
           "groupName": "TYPO3 CMS",
-          "matchPackageNames": ["!typo3/cms-cli", "!typo3/cms-composer-installers"]
+          "matchPackageNames": ["!typo3/cms-cli", "!typo3/cms-composer-installers"],
+          "matchManagers": ["composer"]
       }, {
         "groupName": "Docker",
         "matchDatasources": ["docker"],
+        "matchManagers": ["dockerfile"],
         "versioning": "semver"
       }
     ],
