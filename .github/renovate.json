@@ -7,7 +7,14 @@
         "groupName": "Composer",
         "versioning": "composer",
         "rangeStrategy": "bump",
-        "groupSlug": "composer"
+        "groupSlug": "composer",
+        "postUpgradeTasks": {
+        "fileFilters": ["**/composer.json"],
+        "executionMode": "update",
+        "commands": [
+          "composer update 'typo3/cms-*' -W"
+        ]
+      }
     }
     ]
 }
