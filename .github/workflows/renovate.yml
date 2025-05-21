@@ -3,7 +3,10 @@ name: Renovate
 on:
   schedule:
     - cron: '0 6 * * *' # Daily at 6 AM UTC
-  workflow_dispatch: {}
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
 
 jobs:
   renovate:
