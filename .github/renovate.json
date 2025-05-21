@@ -3,20 +3,11 @@
   "branchPrefix": "github-renovate/",
   "packageRules": [
     {
-      "matchManagers": ["composer"],
-      "matchPackageNames": ["typo3/cms-*"],
-      "postUpdateOptions": ["updateLockFileOnly"],
-      "postUpgradeTasks": {
-        "fileFilters": ["**/composer.json"],
-        "executionMode": "update",
-        "commands": [
-          "composer update 'typo3/cms-*' -W"
-        ]
-      }
-    },
-    {
-      "matchManagers": ["dockerfile"],
-      "matchFileNames": [".github/.devcontainer/Dockerfile"]
+      "paths": ["vendor/**"],
+      "groupName": "Composer",
+      "versioning": "composer",
+      "rangeStrategy": "bump",
+      "groupSlug": "composer"
     }
   ]
 }
