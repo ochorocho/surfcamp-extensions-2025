@@ -48,7 +48,6 @@ port with the given "Forwarded Address".
 # ToDo
 
 * Write docs
-* Changed files Header.html and SubHeader.html. Why?
 * Auto update: Do not ship composer.lock to always install the latest? Dependabot/renovate?
 
 # Development notes

@@ -1,0 +1,32 @@
+{
+  "extends": ["config:base"],
+
+  "packageRules": [
+    {
+      "matchManagers": ["composer"],
+      "matchPackageNames": ["typo3/cms-*"],
+      "postUpdateOptions": ["updateLockFileOnly"],
+      "postUpgradeTasks": {
+        "fileFilters": ["**/composer.json"],
+        "executionMode": "update",
+        "commands": [
+          "composer update 'typo3/cms-*' -W"
+        ]
+      }
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "matchPaths": [".github/.devcontainer/Dockerfile"]
+    }
+  ],
+
+  "docker": {
+    "enabled": true
+  },
+
+  "regexManagers": [],
+  "fileMatch": [
+    "\\.github/\\.devcontainer/Dockerfile$",
+    "composer\\.json$"
+  ]
+}
