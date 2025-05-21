@@ -13,9 +13,6 @@
 	],
 	"packageRules": [
 		{
-			"matchPackagePrefixes": [
-				"typo3/cms-"
-			],
 			"excludePackageNames": [
 				"typo3/cms-cli",
 				"typo3/cms-composer-installers"
