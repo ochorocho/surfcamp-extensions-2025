@@ -1,19 +1,14 @@
 name: Renovate
+
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - "main"
   schedule:
-    # The "*" (#42, asterisk) character has special semantics in YAML, so this
-    # string has to be quoted.
-    - cron: '0/15 * * * *'
+    - cron: '0 6 * * *' # Daily at 6 AM UTC
+  workflow_dispatch: {}
+
 jobs:
   renovate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v42.0.2
         with:
