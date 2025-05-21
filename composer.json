@@ -37,7 +37,7 @@
         "php": ">=8.3.0",
         "typo3-incubator/memsy": "@dev",
         "typo3-incubator/surfcamp-base": "dev-main",
-        "typo3-incubator/theme-fcbigfoot": "^0.0.1",
+        "typo3-incubator/theme-fcbigfoot": "^0.0.2",
         "typo3/cms-backend": "^13.4",
         "typo3/cms-belog": "^13.4",
         "typo3/cms-beuser": "^13.4",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "deb245c73139321c4527a20ae5b9b880",
+    "content-hash": "112e6f82d1a904ddc045c2881a06640c",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5082,16 +5082,16 @@
         },
         {
             "name": "typo3-incubator/theme-fcbigfoot",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3incubator/theme-fcbigfoot.git",
-                "reference": "27cfffb564fedafbe2cb747bde6e7d03a189b21c"
+                "reference": "801cb5b7dff7b62c3083350a246c95014b890a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3incubator/theme-fcbigfoot/zipball/27cfffb564fedafbe2cb747bde6e7d03a189b21c",
-                "reference": "27cfffb564fedafbe2cb747bde6e7d03a189b21c",
+                "url": "https://api.github.com/repos/TYPO3incubator/theme-fcbigfoot/zipball/801cb5b7dff7b62c3083350a246c95014b890a92",
+                "reference": "801cb5b7dff7b62c3083350a246c95014b890a92",
                 "shasum": ""
             },
             "require": {
@@ -5142,9 +5142,9 @@
             "description": "FC Bigfoot Football Club Theme",
             "support": {
                 "issues": "https://github.com/TYPO3incubator/theme-fcbigfoot/issues",
-                "source": "https://github.com/TYPO3incubator/theme-fcbigfoot/tree/0.0.1"
+                "source": "https://github.com/TYPO3incubator/theme-fcbigfoot/tree/0.0.2"
             },
-            "time": "2025-04-07T07:54:50+00:00"
+            "time": "2025-05-08T22:19:44+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
