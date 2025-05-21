@@ -306,7 +306,7 @@ LOCK TABLES `fe_users` WRITE;
 /*!40000 ALTER TABLE `fe_users` DISABLE KEYS */;
 INSERT INTO `fe_users` VALUES
 (1,16,1747689602,1744015096,1,0,0,0,NULL,'0',NULL,0,NULL,'admin','$P$C5tJlzDAHa6hno9T1cr75mvpfDUShu/','1','','','','','','','','','','','','','','',0,0,'','',0,0,'','','',0,0,0,0,NULL,0,0,NULL,''),
-(2,102,1747730374,1747730010,0,0,0,0,NULL,'tx_memsy_member',NULL,1747779113,NULL,'info@example.com','$argon2i$v=19$m=65536,t=16,p=1$b0tOTWJBUElXcEs1UkF3eA$HUhEnLuePdRXc6NT92H0NCVFV8hWnQAuz/QtTpShAvc','2','','J.','','Doe','Some Streeet','+491455464','','info@example.com','','89231','Ulm','DE','','',0,1747774105,'',NULL,534414810,1,'DE75512108001245126199','','',0,1747730010,0,0,'1',1,1,'','');
+(2,102,1747730374,1747730010,0,0,0,0,NULL,'tx_memsy_member',NULL,1747849417,NULL,'info@example.com','$argon2i$v=19$m=65536,t=16,p=1$b0tOTWJBUElXcEs1UkF3eA$HUhEnLuePdRXc6NT92H0NCVFV8hWnQAuz/QtTpShAvc','2','','J.','','Doe','Some Streeet','+491455464','','info@example.com','','89231','Ulm','DE','','',0,1747849417,'',NULL,534414810,1,'DE75512108001245126199','','',0,1747730010,0,0,'1',1,1,'','');
 /*!40000 ALTER TABLE `fe_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -451,7 +451,7 @@ INSERT INTO `index_phash` VALUES
 ('03394a29ed2144f96bced193919a622f','24209093ce98107aa449a6aa385cd375','[]','',10,0,'','0,-1','0','History','From foundation to the regional league Our history is a testament to resilience and triumph. From humble beginnings to remarkable achievements, each chapter tells a story of dedication, teamwork, and ',1744014582,1747774059,12913,'70ff335fd61044ef649fa7ce23b08704',1747774059,134,0,1744014582,0,0,0,0),
 ('1290464a62b44fab8d78ace9c2f6f6e9','61a2a2a21551669263cbd52843897860','[]','',106,0,'','0,-1','0','Login','',1747728332,1747774085,8421,'99dea78007133396a7b8ed70578ac6ae',1747774085,22,0,1747727970,0,0,0,0),
 ('230f8464c03ab1dc4fbd4bc332b6b776','ad5c9ca91e077da8aa1ce2dff42a55f1','[]','',99,0,'','0,-1','0','Page A','Page A Page B',1744022126,1744022132,1599,'ecc6dd1a44b97d6794d65dc91f851d7a',1744022132,8,0,1744022114,0,0,0,0),
-('3d798c3f120fdabe32985de46a5fc2fd','dc91fa3918f3fab9a43a16f82bb27086','[]','',1,0,'','0,-1','0','FC Bigfoot','Events News Club Login History Membership Contact Team Sponsors Contact Us FC Bigfoot Fuerteventura 23 years of passion and dedication Join today Our latest Game Results News 24 Feb 2024 15th charity ',1747728300,1747763581,20613,'68cdca309ecdb7e1addb33bad54e5a7b',1747763581,49,0,1744014582,0,0,0,0),
+('3d798c3f120fdabe32985de46a5fc2fd','dc91fa3918f3fab9a43a16f82bb27086','[]','',1,0,'','0,-1','0','FC Bigfoot','Events News Club Login History Membership Contact Team Sponsors Contact Us FC Bigfoot Fuerteventura 23 years of passion and dedication Join today Our latest Game Results News 24 Feb 2024 15th charity ',1747728300,1747863503,20613,'68cdca309ecdb7e1addb33bad54e5a7b',1747763581,49,0,1744014582,0,0,0,0),
 ('3e239e3d69de4b3b36fcd34479259a89','8a6ef888a6fc754ec9234c30e393cb8f','[]','',5,0,'','0,-1','0','Sponsors','Our companions and sponsors At FC Bigfoot, we are proud to have the backing of our dedicated supporters and companions. These valued partners play a crucial role in the success and growth of our club.',1744014582,1747767218,9404,'34d68992759821b3215089eb3c75c365',1747512491,30,0,1744014582,0,0,0,0),
 ('49a936d4a225f7a63e3c2d860a4ec022','61a2a2a21551669263cbd52843897860','[]','',106,0,'','0,-2,2','0','Login','',1747728332,1747774105,8761,'99dea78007133396a7b8ed70578ac6ae',1747774105,7,0,1747727970,0,0,0,0),
 ('55a01547a20d7d965193fcd3e277624c','49bd411e140968a8cdc3180e2441bfe7','[]','',100,0,'','0,-1','0','Page B','Page A Page B',1744022124,1744022133,1599,'3e413a5660735903caa5cd997bfbcf2f',1744022133,8,0,1744022118,0,0,0,0),
@@ -3221,7 +3221,7 @@ INSERT INTO `sys_registry` VALUES
 (47,'extensionDataImport','typo3-incubator/memsy/ext_tables_static+adt.sql','s:0:\"\";'),
 (48,'extensionDataImport','typo3-incubator/surfcamp-base/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'core','formProtectionSessionToken:1','s:64:\"1fc4b05ad269abcb73916dcaa7a0b6c63993b067b8f33136e4af54ad49e7d3a5\";'),
-(51,'tx_scheduler','lastRun','a:3:{s:5:\"start\";i:1747848841;s:3:\"end\";i:1747848841;s:4:\"type\";s:4:\"cron\";}');
+(51,'tx_scheduler','lastRun','a:3:{s:5:\"start\";i:1747863781;s:3:\"end\";i:1747863782;s:4:\"type\";s:4:\"cron\";}');
 /*!40000 ALTER TABLE `sys_registry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3956,7 +3956,7 @@ CREATE TABLE `tx_scheduler_task` (
   `task_group` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `index_nextexecution` (`nextexecution`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3965,6 +3965,10 @@ CREATE TABLE `tx_scheduler_task` (
 
 LOCK TABLES `tx_scheduler_task` WRITE;
 /*!40000 ALTER TABLE `tx_scheduler_task` DISABLE KEYS */;
+INSERT INTO `tx_scheduler_task` VALUES
+(1,1747863616,0,0,'',1747863900,0,NULL,'','O:54:\"TYPO3\\CMS\\Scheduler\\Task\\ExecuteSchedulableCommandTask\":13:{s:12:\"\0*\0scheduler\";N;s:10:\"\0*\0taskUid\";i:1;s:11:\"\0*\0disabled\";b:0;s:19:\"\0*\0runOnNextCronJob\";b:0;s:12:\"\0*\0execution\";O:29:\"TYPO3\\CMS\\Scheduler\\Execution\":6:{s:8:\"\0*\0start\";i:1747863522;s:6:\"\0*\0end\";i:0;s:11:\"\0*\0interval\";i:0;s:11:\"\0*\0multiple\";b:0;s:10:\"\0*\0cronCmd\";s:11:\"*/5 * * * *\";s:23:\"\0*\0isNewSingleExecution\";b:0;}s:16:\"\0*\0executionTime\";i:1747863900;s:14:\"\0*\0description\";s:0:\"\";s:12:\"\0*\0taskGroup\";i:0;s:20:\"\0*\0commandIdentifier\";s:21:\"referenceindex:update\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:1:{s:5:\"check\";b:0;}s:15:\"\0*\0optionValues\";a:1:{s:5:\"check\";b:0;}s:11:\"\0*\0defaults\";a:1:{s:5:\"check\";i:0;}}',NULL,0),
+(2,1747863683,0,0,'',1747864800,0,NULL,'','O:54:\"TYPO3\\CMS\\Scheduler\\Task\\ExecuteSchedulableCommandTask\":13:{s:12:\"\0*\0scheduler\";N;s:10:\"\0*\0taskUid\";i:2;s:11:\"\0*\0disabled\";b:0;s:19:\"\0*\0runOnNextCronJob\";b:0;s:12:\"\0*\0execution\";O:29:\"TYPO3\\CMS\\Scheduler\\Execution\":6:{s:8:\"\0*\0start\";i:1747863622;s:6:\"\0*\0end\";i:0;s:11:\"\0*\0interval\";i:0;s:11:\"\0*\0multiple\";b:0;s:10:\"\0*\0cronCmd\";s:11:\"0 */2 * * *\";s:23:\"\0*\0isNewSingleExecution\";b:0;}s:16:\"\0*\0executionTime\";i:1747864800;s:14:\"\0*\0description\";s:0:\"\";s:12:\"\0*\0taskGroup\";i:1;s:20:\"\0*\0commandIdentifier\";s:20:\"memsy:manage-members\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:1:{s:4:\"site\";b:0;}s:15:\"\0*\0optionValues\";a:1:{s:4:\"site\";a:1:{i:0;s:3:\"all\";}}s:11:\"\0*\0defaults\";a:1:{s:4:\"site\";a:1:{i:0;s:3:\"all\";}}}',NULL,1),
+(3,1747863740,0,0,'',1747864800,0,NULL,'','O:54:\"TYPO3\\CMS\\Scheduler\\Task\\ExecuteSchedulableCommandTask\":13:{s:12:\"\0*\0scheduler\";N;s:10:\"\0*\0taskUid\";i:3;s:11:\"\0*\0disabled\";b:0;s:19:\"\0*\0runOnNextCronJob\";b:0;s:12:\"\0*\0execution\";O:29:\"TYPO3\\CMS\\Scheduler\\Execution\":6:{s:8:\"\0*\0start\";i:1747863704;s:6:\"\0*\0end\";i:0;s:11:\"\0*\0interval\";i:0;s:11:\"\0*\0multiple\";b:0;s:10:\"\0*\0cronCmd\";s:11:\"0 */2 * * *\";s:23:\"\0*\0isNewSingleExecution\";b:0;}s:16:\"\0*\0executionTime\";i:1747864800;s:14:\"\0*\0description\";s:0:\"\";s:12:\"\0*\0taskGroup\";i:1;s:20:\"\0*\0commandIdentifier\";s:21:\"memsy:manage-payments\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:1:{s:4:\"site\";b:0;}s:15:\"\0*\0optionValues\";a:1:{s:4:\"site\";a:1:{i:0;s:3:\"all\";}}s:11:\"\0*\0defaults\";a:1:{s:4:\"site\";a:1:{i:0;s:3:\"all\";}}}',NULL,1);
 /*!40000 ALTER TABLE `tx_scheduler_task` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3987,7 +3991,7 @@ CREATE TABLE `tx_scheduler_task_group` (
   `description` longtext DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3996,6 +4000,8 @@ CREATE TABLE `tx_scheduler_task_group` (
 
 LOCK TABLES `tx_scheduler_task_group` WRITE;
 /*!40000 ALTER TABLE `tx_scheduler_task_group` DISABLE KEYS */;
+INSERT INTO `tx_scheduler_task_group` VALUES
+(1,0,1747863654,1747863654,0,0,256,'EXT:memsy',NULL);
 /*!40000 ALTER TABLE `tx_scheduler_task_group` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -4008,4 +4014,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-05-21 17:34:22
+-- Dump completed on 2025-05-21 21:43:30
