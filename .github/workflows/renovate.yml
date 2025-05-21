@@ -20,7 +20,5 @@ jobs:
           configurationFile: .github/renovate.json
           autodiscover: true
           token: ${{ secrets.RENOVATE_TOKEN }}
-          args: >
-            --autodiscover
-            --platform=github
-            --log-level=debug
+        env:
+          LOG_LEVEL: debug
