@@ -14,7 +14,7 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
     steps:
-    - 
+    -
       name: Checkout
       id: checkout
       uses: actions/checkout@v1
@@ -33,12 +33,13 @@ jobs:
       uses: docker/setup-buildx-action@v2
       with:
         platforms: linux/amd64,linux/arm64
-    - 
+    -
       name: Pre-build dev container image
       uses: devcontainers/ci@v0.2
       with:
         platform: linux/amd64,linux/arm64
         subFolder: .github
         imageName: ghcr.io/${{ github.repository }}
+        imageTag: latest
         cacheFrom: ghcr.io/${{ github.repository }}
         push: always
