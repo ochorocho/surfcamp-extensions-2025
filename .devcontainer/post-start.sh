@@ -56,6 +56,7 @@ sudo chmod 0644 /etc/cron.d/typo3-scheduler
 sudo service cron start
 sudo service typo3-message-consumer start
 sudo service apache2 start
-sleep 5
+
 # Ensure caches are clean and env vars will be loaded
+sleep 2
 ./bin/typo3 cache:flush

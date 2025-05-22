@@ -1,6 +1,8 @@
 FROM mcr.microsoft.com/devcontainers/php:8.4
 COPY ports.conf /etc/apache2/ports.conf
 COPY typo3-message-consumer /etc/init.d/typo3-message-consumer
+ENV APACHE_RUN_USER=vscode
+ENV APACHE_RUN_GROUP=vscode
 RUN sudo apt update && \
     sudo apt install -y libicu-dev mariadb-client mariadb-server cron && \
     sudo -E docker-php-ext-install intl mysqli && \
