@@ -14,8 +14,6 @@ RUN sudo apt update && \
     sudo mysql -e "GRANT ALL PRIVILEGES ON db.* TO 'db'@'127.0.0.1';" && \
     sudo mysql -e "FLUSH PRIVILEGES;" && \
     service mariadb stop && \
-    echo "export APACHE_RUN_USER=vscode" >> /etc/apache2/envvars && \
-    echo "export APACHE_RUN_GROUP=vscode" >> /etc/apache2/envvars && \
     cat <<EOF | sudo tee -a /usr/local/etc/php/conf.d/xdebug.ini
 xdebug.client_host = 0.0.0.0
 xdebug.log="/var/log/apache2/xdebug.log"
