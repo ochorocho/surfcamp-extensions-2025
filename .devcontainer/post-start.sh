@@ -58,5 +58,6 @@ sudo service typo3-message-consumer start
 sudo service apache2 start
 
 # Ensure caches are clean and env vars will be loaded
-sleep 2
+sleep 5
 ./bin/typo3 cache:flush
+./bin/typo3 cache:warmup
