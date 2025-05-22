@@ -60,6 +60,6 @@ sudo service apache2 stop
 sudo service apache2 start
 
 # Ensure caches are clean and env vars will be loaded
-sleep 10
+wget "$TYPO3_BASE_DOMAIN"
 ./bin/typo3 cache:flush
 ./bin/typo3 cache:warmup
