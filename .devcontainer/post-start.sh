@@ -40,13 +40,14 @@ echo "export PATH=$WORKSPACE_PATH/bin:\$PATH" >> ~/.bashrc
 if [[ -n "$CODESPACE_NAME" ]]; then
   baseDomain="export TYPO3_BASE_DOMAIN=https://$CODESPACE_NAME-3333.app.github.dev"
   echo "$baseDomain" >> ~/.bashrc
-  echo "$baseDomain" | sudo tee -a /etc/apache2/envvars
+  # echo "$baseDomain" | sudo tee -a /etc/apache2/envvars
 else
   baseDomain="export TYPO3_BASE_DOMAIN=http://127.0.0.1:3333"
   echo "$baseDomain" >> ~/.bashrc
-  echo "$baseDomain" | sudo tee -a /etc/apache2/envvars
+  # echo "$baseDomain" | sudo tee -a /etc/apache2/envvars
 fi
 
+source ~/.bashrc
 ./bin/typo3 extension:setup
 
 # Add scheduler cron
@@ -55,9 +56,10 @@ sudo chmod 0644 /etc/cron.d/typo3-scheduler
 
 sudo service cron start
 sudo service typo3-message-consumer start
+sudo service apache2 stop
 sudo service apache2 start
 
 # Ensure caches are clean and env vars will be loaded
-sleep 5
+sleep 10
 ./bin/typo3 cache:flush
 ./bin/typo3 cache:warmup
