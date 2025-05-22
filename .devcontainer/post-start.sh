@@ -40,11 +40,11 @@ echo "export PATH=$WORKSPACE_PATH/bin:\$PATH" >> ~/.bashrc
 if [[ -n "$CODESPACE_NAME" ]]; then
   baseDomain="export TYPO3_BASE_DOMAIN=https://$CODESPACE_NAME-3333.app.github.dev"
   echo "$baseDomain" >> ~/.bashrc
-  # echo "$baseDomain" | sudo tee -a /etc/apache2/envvars
+  echo "$baseDomain" | sudo tee -a /etc/apache2/envvars
 else
   baseDomain="export TYPO3_BASE_DOMAIN=http://127.0.0.1:3333"
   echo "$baseDomain" >> ~/.bashrc
-  # echo "$baseDomain" | sudo tee -a /etc/apache2/envvars
+  echo "$baseDomain" | sudo tee -a /etc/apache2/envvars
 fi
 
 source ~/.bashrc
