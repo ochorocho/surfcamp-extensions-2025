@@ -48,18 +48,19 @@ else
 fi
 
 source ~/.bashrc
-./bin/typo3 extension:setup
+
 
 # Add scheduler cron
 echo "* * * * * root /usr/local/bin/php $WORKSPACE_PATH/bin/typo3 scheduler:run > /proc/1/fd/1 2>/proc/1/fd/2" | sudo tee /etc/cron.d/typo3-scheduler
 sudo chmod 0644 /etc/cron.d/typo3-scheduler
 
-sudo service cron start
-sudo service typo3-message-consumer start
 sudo service apache2 stop
 sudo service apache2 start
+sudo service cron start
+sudo service typo3-message-consumer start
 
 # Ensure caches are clean and env vars will be loaded
 wget "$TYPO3_BASE_DOMAIN"
+./bin/typo3 extension:setup
 ./bin/typo3 cache:flush
-./bin/typo3 cache:warmup
+
