@@ -47,20 +47,21 @@ else
   echo "$baseDomain" | sudo tee -a /etc/apache2/envvars
 fi
 
-source ~/.bashrc
+# Enable autocompletion for "typo3"
+echo "eval \"\$(/workspaces/surfcamp-2025/bin/typo3 completion bash)\"" >> /home/vscode/.bashrc
 
+source ~/.bashrc
 
 # Add scheduler cron
 echo "* * * * * root /usr/local/bin/php $WORKSPACE_PATH/bin/typo3 scheduler:run > /proc/1/fd/1 2>/proc/1/fd/2" | sudo tee /etc/cron.d/typo3-scheduler
 sudo chmod 0644 /etc/cron.d/typo3-scheduler
 
+# Mind the order of the services to start
 sudo service apache2 stop
 sudo service apache2 start
 sudo service cron start
 sudo service typo3-message-consumer start
 
 # Ensure caches are clean and env vars will be loaded
-wget "$TYPO3_BASE_DOMAIN"
 ./bin/typo3 extension:setup
 ./bin/typo3 cache:flush
-
