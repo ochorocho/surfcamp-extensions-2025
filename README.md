@@ -32,7 +32,7 @@ Wating for a dedicated repository
 * Restaurant: https://github.com/TYPO3incubator/surfcamp-2025-team1/tree/develop/packages
 * Shopping Cart: https://github.com/TYPO3incubator/surfcamp-2025-team2/
 * API aggregation: https://github.com/TYPO3incubator/surfcamp-2025-team3/tree/main/packages/surfcamp-base
-* Servey: https://github.com/TYPO3incubator/surfcamp-2025-team4/
+* Surfey: https://github.com/TYPO3incubator/surfcamp-2025-team4/
 * Events: https://github.com/TYPO3incubator/surfcamp-2025-team6
 
 ## GitHub Codespace
