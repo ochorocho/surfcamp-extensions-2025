@@ -306,7 +306,7 @@ LOCK TABLES `fe_users` WRITE;
 /*!40000 ALTER TABLE `fe_users` DISABLE KEYS */;
 INSERT INTO `fe_users` VALUES
 (1,16,1747689602,1744015096,1,0,0,0,NULL,'0',NULL,0,NULL,'admin','$P$C5tJlzDAHa6hno9T1cr75mvpfDUShu/','1','','','','','','','','','','','','','','',0,0,'','',0,0,'','','',0,0,0,0,NULL,0,0,NULL,''),
-(2,102,1747730374,1747730010,0,0,0,0,NULL,'tx_memsy_member',NULL,1747849417,NULL,'info@example.com','$argon2i$v=19$m=65536,t=16,p=1$b0tOTWJBUElXcEs1UkF3eA$HUhEnLuePdRXc6NT92H0NCVFV8hWnQAuz/QtTpShAvc','2','','J.','','Doe','Some Streeet','+491455464','','info@example.com','','89231','Ulm','DE','','',0,1747849417,'',NULL,534414810,1,'DE75512108001245126199','','',0,1747730010,0,0,'1',1,1,'','');
+(2,102,1747730374,1747730010,0,1,0,0,NULL,'tx_memsy_member',NULL,1747849417,NULL,'info@example.com','$argon2i$v=19$m=65536,t=16,p=1$b0tOTWJBUElXcEs1UkF3eA$HUhEnLuePdRXc6NT92H0NCVFV8hWnQAuz/QtTpShAvc','2','','J.','','Doe','Some Streeet','+491455464','','info@example.com','','89231','Ulm','DE','','',0,1747849417,'',NULL,534414810,1,'DE75512108001245126199','','',0,1747730010,0,0,'1',1,1,'','');
 /*!40000 ALTER TABLE `fe_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
