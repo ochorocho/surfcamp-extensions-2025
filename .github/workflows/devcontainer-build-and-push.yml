@@ -36,6 +36,10 @@ jobs:
     -
       name: Pre-build dev container image
       uses: devcontainers/ci@v0.2
+      env:
+        # Workaround untagged images.
+        # https://docs.docker.com/build/building/variables/#buildx_no_default_attestations
+        BUILDX_NO_DEFAULT_ATTESTATIONS: true
       with:
         platform: linux/amd64,linux/arm64
         subFolder: .github
