@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "deb245c73139321c4527a20ae5b9b880",
+    "content-hash": "bae073a553dbb0acad7be2a07b19ed70",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -4985,6 +4985,102 @@
             "time": "2025-03-03T07:12:39+00:00"
         },
         {
+            "name": "typo3-incubator/event-wave",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3incubator/event-wave.git",
+                "reference": "337a1b393ae7896905cba6cc7ba8b0a0da1802d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3incubator/event-wave/zipball/337a1b393ae7896905cba6cc7ba8b0a0da1802d7",
+                "reference": "337a1b393ae7896905cba6cc7ba8b0a0da1802d7",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^13.4"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "surfcamp_events"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3Incubator\\SurfcampEvents\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Grübling",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Rafal Jania",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Niles Langlotz",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Lena Ebner",
+                    "homepage": "https://lenaebner.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Benjamin Franzke",
+                    "role": "Mentor"
+                }
+            ],
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "support": {
+                "issues": "https://github.com/TYPO3incubator/event-wave/issues",
+                "source": "https://github.com/TYPO3incubator/event-wave/tree/main"
+            },
+            "time": "2025-06-23T16:40:48+00:00"
+        },
+        {
+            "name": "typo3-incubator/fcbigfoot-local",
+            "version": "dev-task/add-event-wave",
+            "dist": {
+                "type": "path",
+                "url": "packages/fcbigfoot-local",
+                "reference": "65ef7a6ca680f5f40679517907912dc93b7bd4b3"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4",
+                "typo3/cms-fluid-styled-content": "^13.4",
+                "typo3/cms-rte-ckeditor": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "fcbigfoot_local"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Serves as a local extension for the FCBigfoot project, providing additional functionality and customization.",
+            "homepage": "https://www.typo3.org",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "typo3-incubator/memsy",
             "version": "dev-main",
             "source": {
@@ -7058,6 +7154,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "typo3-incubator/event-wave": 20,
+        "typo3-incubator/fcbigfoot-local": 20,
         "typo3-incubator/memsy": 20,
         "typo3-incubator/surfcamp-base": 20
     },

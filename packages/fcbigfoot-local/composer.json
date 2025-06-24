@@ -1,0 +1,18 @@
+{
+    "name": "typo3-incubator/fcbigfoot-local",
+    "type": "typo3-cms-extension",
+    "description": "Serves as a local extension for the FCBigfoot project, providing additional functionality and customization.",
+    "homepage": "https://www.typo3.org",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-rte-ckeditor": "^13.4",
+        "typo3/cms-fluid-styled-content": "^13.4"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "fcbigfoot_local"
+        }
+    }
+}
