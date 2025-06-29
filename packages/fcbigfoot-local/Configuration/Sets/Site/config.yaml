@@ -1,0 +1,7 @@
+name: typo3-incubator/fcbigfoot-local
+label: 'Surfcamp Base'
+dependencies:
+  - typo3-incubator/theme-fcbigfoot
+  - typo3-incubator/memsy/member-management
+  - typo3-incubator/surfcamp-events
+  - typo3/felogin

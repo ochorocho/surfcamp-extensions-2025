@@ -1,8 +1,6 @@
 base: '%env(TYPO3_BASE_DOMAIN)%'
 dependencies:
-  - typo3-incubator/theme-fcbigfoot
-  - typo3-incubator/memsy/member-management
-  - typo3/felogin
+  - typo3-incubator/fcbigfoot-local
 languages:
   -
     title: English

@@ -26,6 +26,7 @@ This project will combine all projects created during the TYPO3 SurfCamp 2025
 Installed
 
 * MemSy: https://github.com/TYPO3incubator/ext-memsy/
+* Event Wave: https://github.com/TYPO3incubator/event-wave/
 
 Wating for a dedicated repository
 
@@ -33,7 +34,6 @@ Wating for a dedicated repository
 * Shopping Cart: https://github.com/TYPO3incubator/surfcamp-2025-team2/
 * API aggregation: https://github.com/TYPO3incubator/surfcamp-2025-team3/tree/main/packages/surfcamp-base
 * Surfey: https://github.com/TYPO3incubator/surfcamp-2025-team4/
-* Events: https://github.com/TYPO3incubator/surfcamp-2025-team6
 
 ## GitHub Codespace
 
