@@ -2,13 +2,6 @@
 
 This project will combine all projects created during the TYPO3 SurfCamp 2025
 
-> [!NOTE]
-> This is currently in a experimental state!
-> Once the extensions are extracted from the project repository
-> into a dedicated repository for the extension it can and
-> hopefully will be installed and configured
->
-
 ## Credentials
 
 - Backend: <code-space-url or see PORTS in terminal>/typo3
@@ -28,7 +21,7 @@ Installed
 * MemSy: https://github.com/TYPO3incubator/ext-memsy/
 * Event Wave: https://github.com/TYPO3incubator/event-wave/
 
-Wating for a dedicated repository
+Waiting for a dedicated repository
 
 * Restaurant: https://github.com/TYPO3incubator/surfcamp-2025-team1/tree/develop/packages
 * Shopping Cart: https://github.com/TYPO3incubator/surfcamp-2025-team2/
