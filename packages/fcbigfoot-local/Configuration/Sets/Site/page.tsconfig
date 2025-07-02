@@ -1,11 +1,3 @@
-@import './PageTsConfig/BackendLayouts/'
-
-RTE {
-    default {
-        preset = surfcamp_base
-    }
-}
-
 TCEFORM {
     tt_content {
         CType.keepItems := addToList(memsy_createmembership,memsy_confirmmembership,memsy_membershipsettings,felogin_login,surfcampevents_eventlist, surfcampevents_eventlocationsmap, surfcampevents_eventtimeline)
