@@ -13,7 +13,8 @@
 				"mtxr.sqltools",
 				"xdebug.php-pack",
 				"EditorConfig.EditorConfig",
-				"mtxr.sqltools-driver-mysql"
+				"mtxr.sqltools-driver-mysql",
+				"yzhang.markdown-all-in-one"
 			]
 		}
 	},
